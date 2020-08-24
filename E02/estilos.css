@@ -10,7 +10,7 @@ img{ border:0; }
 /*Texto alineado al centro*/
 .center{ text-align:center; }
 
-h1{	font-size: 2.0em; }
+h1{	font-size: 2.0em; text-align: center}
 h2{	font-size: 1.5em; }
 
 
@@ -20,12 +20,20 @@ h2{	font-size: 1.5em; }
 	max-width: 1024px;
 	border: 1px solid #000;
 }
+#content h1,h2{
+	color: #FF3D2E;
+}
+#container p{
+	font-family: 'Noto Sans JP', sans-serif;
+}
 /*********************************/
 /*Encabezado*/
 #header {
 /*Color en degradado creado en http://www.colorzilla.com/gradient-editor/ */
 	padding: 20px;
 	height:60px;
+	background-color: #272F32;
+	color:white;
 }
 
 #header h1 { 
@@ -37,7 +45,9 @@ h2{	font-size: 1.5em; }
 #navigation {
 	float: left;
 	width: 100%;
-	border:1px solid #000
+	border:1px solid #000;
+	background-color: #9DBDC6;
+
 }
 
 #navigation ul {	
@@ -55,12 +65,13 @@ h2{	font-size: 1.5em; }
 	text-decoration: none;	
 }
 
-#navigation li a:hover { background:#FF0000; }
+#navigation li a:hover { background:#F0CA4D; }
 /*********************************/
 /*Contenido*/
 #content {
 	clear: left;
 	padding: 20px;
+	background-color: #FFFFFF;
 }
 
 #content a { 
@@ -74,6 +85,32 @@ h2{	font-size: 1.5em; }
 #content h1, #content h2 {
 	margin: 0 0 1em 0;	
 }
+#content table{
+	border-collapse: collapse;
+	margin-left: 40%;
+	text-align: center;
+}
+#content table th{
+background-color: red;
+}
+#content table th,td{
+	border-inline: 1px solid #FF3D2E;
+	border-bottom: 1px solid #FF3D2E;
+
+}
+fieldset {
+	background-color: #eeeeee;
+}
+
+legend {
+	background-color: gray;
+	color: white;
+	padding: 5px 10px;
+}
+
+input {
+	margin: 5px;
+}
 /*********************************/
 /*Pie*/
 #footer {
@@ -81,6 +118,7 @@ h2{	font-size: 1.5em; }
 	padding: 15px;
 	height: 150px;
 	border: 1px solid #000;
+	background-color: #DAEAEF;
 }
 
 #footer p { float:right; }
@@ -128,7 +166,7 @@ h2{	font-size: 1.5em; }
 
 label.chk input {
 	display:inline;
-	border:0px;	
+	border:0px;
 }
 
 #vertical label{
